@@ -2,15 +2,15 @@ toppings: [
     {
         "name": "pepperoni",
         "prefix": "pepperoni",
-         "image": "/imagepath"
+         "image": "/images/16oz_Pepperoni_Stick_DSC_0001__85102.1446138804.1000.1000.jpg"
     },
 ]
 
 toppings: [
     {
         "name": "pinnaples",
-        "prefix": "pinnaples",
-         "image": "/imagepath"
+        "prefix": "pinapples",
+         "image": "/images/941162.jpg"
     },
 ]
 
@@ -18,7 +18,7 @@ toppings: [
     {
         "name": "ham",
         "prefix": "ham",
-         "image": "/imagepath"
+         "image": "/images/AdobeStock_87122556-scaled.jpeg"
     },
 ]
 
@@ -26,15 +26,15 @@ toppings: [
     {
         "name": "mushrooms",
         "prefix": "mushrooms",
-         "image": "/imagepath"
+         "image": "/images/mushrooms.jpg"
     },
 ]
 
 toppings: [
     {
-        "name": "olives",
-        "prefix": "olives",
-         "image": "/imagepath"
+        "name": "black olives",
+        "prefix": "black_olives",
+         "image": "/image/gomo-sliced-black-olives-2.jpg"
     },
 ]
 
@@ -42,7 +42,7 @@ toppings: [
     {
         "name": "bellpepers",
         "prefix": "bellpepers",
-         "image": "/imagepath"
+         "image": "/images/istockphoto-184584559-1024x1024.jpg"
     },
 ]
 
@@ -50,7 +50,7 @@ toppings: [
     {
         "name": "sauseg",
         "prefix": "sauseg",
-         "image": "/imagepath"
+         "image": "/images/download (1).jpg"
     },
 ]
 
@@ -58,7 +58,7 @@ toppings: [
     {
         "name": "bacone",
         "prefix": "bacone",
-         "image": "/imagepath"
+         "image": "/images/baked-bacon-Lead-1.jpg"
     },
 ]
 
@@ -66,7 +66,7 @@ toppings: [
     {
         "name": "shrimp",
         "prefix": "shrimp",
-         "image": "/images/"
+         "image": "/images/shrimp-on-wooden-platter-1296x728.jpg"
     },
 ]
 
@@ -82,7 +82,7 @@ half:[
     {
         "name": "half_pizza",
         "prefix": "half_pizza",
-        "image":"imagepath"
+        "image":"/images/93410466-half-of-pizza-on-a-dark-wooden-background-.jpg"
     }
 ]
 
@@ -90,6 +90,6 @@ extra:[
     {
         "name": "extra_pizza",
         "prefix": "extra_pizza",
-        "image":"imagepath"
+        "image":"/images/2Gmv5.jpeg"
     }
 ]
