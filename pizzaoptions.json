@@ -2,7 +2,7 @@ toppings: [
     {
         "name": "pepperoni",
         "prefix": "pepperoni",
-         "image": "/images/16oz_Pepperoni_Stick_DSC_0001__85102.1446138804.1000.1000.jpg"
+         "image": "/images/pepperoni_left.png"
     },
 ]
 
@@ -10,7 +10,7 @@ toppings: [
     {
         "name": "pinnaples",
         "prefix": "pinapples",
-         "image": "/images/941162.jpg"
+         "image": "/images/pngegg.png"
     },
 ]
 
@@ -18,7 +18,7 @@ toppings: [
     {
         "name": "ham",
         "prefix": "ham",
-         "image": "/images/AdobeStock_87122556-scaled.jpeg"
+         "image": "/images/2a766ad_regular.png"
     },
 ]
 
@@ -26,7 +26,7 @@ toppings: [
     {
         "name": "mushrooms",
         "prefix": "mushrooms",
-         "image": "/images/mushrooms.jpg"
+         "image": "/images/585ea63ecb11b227491c352d.png"
     },
 ]
 
@@ -34,7 +34,7 @@ toppings: [
     {
         "name": "black olives",
         "prefix": "black_olives",
-         "image": "/image/gomo-sliced-black-olives-2.jpg"
+         "image": "/image/Daco_6132917.png"
     },
 ]
 
@@ -42,7 +42,7 @@ toppings: [
     {
         "name": "bellpepers",
         "prefix": "bellpepers",
-         "image": "/images/istockphoto-184584559-1024x1024.jpg"
+         "image": "/images/clipart4320434.png"
     },
 ]
 
@@ -50,7 +50,7 @@ toppings: [
     {
         "name": "sauseg",
         "prefix": "sauseg",
-         "image": "/images/download (1).jpg"
+         "image": "/images/sliced-sausage-png-.png"
     },
 ]
 
@@ -58,7 +58,7 @@ toppings: [
     {
         "name": "bacone",
         "prefix": "bacone",
-         "image": "/images/baked-bacon-Lead-1.jpg"
+         "image": "/images/bacon-17.png"
     },
 ]
 
@@ -66,7 +66,7 @@ toppings: [
     {
         "name": "shrimp",
         "prefix": "shrimp",
-         "image": "/images/shrimp-on-wooden-platter-1296x728.jpg"
+         "image": "/images/2cd43b_655a3e7a01fc48728fb483ad88656ef1_mv2.png"
     },
 ]
 
@@ -74,7 +74,7 @@ whole:[
     {
         "name": "whole_pizza",
         "prefix": "whole_pizza",
-        "image":"/images/download.jpg"
+        "image":"/images/cheese.png"
     }
 ]
 
