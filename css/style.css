@@ -4,6 +4,8 @@
 }
 .navbar-brand{
     color: #f7c162ff;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
 }
 .nav-link{
     color: #fff;
