@@ -1,3 +1,7 @@
+body{
+    background-color: #78945fff;
+   
+}
 .navbar{
     background-color: #ba1200ff;
     color: #fff;
@@ -5,10 +9,14 @@
 .navbar-brand{
     color: #f7c162ff;
     font-family: 'Italianno', cursive;
-    font-size: 30px;
+    font-size: 25px;
+}
+.navbar-brand:hover{
+    color: #fff;
 }
 .nav-link{
     color: #fff;
+    align-content: flex-end;
 }
 .nav-link:hover{
     color: #f7c162ff;
@@ -30,9 +38,20 @@
     color: #fff;
     margin: auto;
 }
+
+/* order page */
+
+#orderContainer{
+    margin-top: 20px;
+    background-color: #fff;
+    height: 500px;
+    border-radius: 15px;
+}
+
+
 /* CSS HEX */
 /* --international-orange-engineering: #ba1200ff;
 --sinopia: #cc441cff;
 --maximum-yellow-red: #f7c162ff;
 --russian-green: #78945fff;
---amazon: #4a7c59ff; */
+--blue-sapphire: #0b5d83ff; */
