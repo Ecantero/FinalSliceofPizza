@@ -40,7 +40,33 @@
       
     </div>
     <div class="col-sm-4" id='buttonContainer'>
-      <button onclick="location.href='order.html'" type="button" class="btn">Order Now</button>
+      <button type="button" class="btn" data-toggle="modal" data-target="#pizza">Order Now</button>
+      
+      <div id="pizza" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <div class="modal-title">The Hearty Slice Factory</div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+             
+                <img id='pizzaGraphic' src="images/cheese.png" alt="">
+                <!-- <div id='price'> topping-price</div> -->
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      
     </div>
     <div class="col-sm-4">
      
