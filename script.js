@@ -170,3 +170,14 @@ function thankYou(){
   console.log("works");
   thankyou.style.display = "block";
 }
+
+// function showChecked(){
+//   document.getElementById('priceText').innerHTML = toppingsSelected();
+  
+// }
+// function toppingsSelected(){
+//   return document.querySelectorAll("input[name=topping]:checked").length;
+// }
+// document.querySelectorAll("input[name=topping]").forEach(i=>{
+//   i.onclick = () => showChecked();
+//  });
