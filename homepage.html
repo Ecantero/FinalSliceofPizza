@@ -36,6 +36,12 @@
         </ul>
       
       </nav>
+
+      <div class="alert alert-success alert-dismissible" id="thankyou">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Thank you!</strong> Your order has just reached our kitchen.
+      </div>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -76,7 +82,7 @@
                       <label class="custom-control-label" for="customPizza4">Veggie Delight</label>
                     </div>
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customPizza5"onclick="classic()">
+                      <input type="checkbox" class="custom-control-input" id="customPizza5"onclick="hawaiian()">
                       <label class="custom-control-label" for="customPizza5">Hawaiian</label>
                     </div>
                 </div>
@@ -284,7 +290,7 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Order Now</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton" onclick="thankYou()">Order Now</button>
             </div>
           </div>
       

@@ -44,6 +44,9 @@ body{
     font-family: 'Crimson Text', serif;
     margin: auto;
 }
+.alert{
+  display: none;
+}
 
 /* order page */
 

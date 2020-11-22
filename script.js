@@ -97,11 +97,13 @@ function meatLovers(){
         topping2.checked = true;
         topping3.checked = true;
         topping4.checked = true;
+        showMenu();
     } else {
       topping1.checked = false;
       topping2.checked = false;
       topping3.checked = false;
       topping4.checked = false;
+      showMenu();
     }
 }
 
@@ -110,11 +112,12 @@ function baileysOriginal(){
     topping1.checked = true;
     topping2.checked = true;
     topping7.checked = true;
+    showMenu();
 } else {
   topping1.checked = false;
   topping2.checked = false;
   topping7.checked = false;
-
+  showMenu();
   }
 }
 
@@ -124,11 +127,13 @@ function fireCracker(){
     topping2.checked = true;
     topping9.checked = true;
     topping10.checked = true;
+    showMenu();
 } else {
   topping1.checked = false;
   topping2.checked = false;
   topping9.checked = false;
   topping10.checked = false;
+  showMenu();
   }
 }
 
@@ -137,22 +142,31 @@ function veggieDelight(){
     topping7.checked = true;
     topping8.checked = true;
     topping9.checked = true;
+    showMenu();
 } else {
   topping7.checked = false;
   topping8.checked = false;
   topping9.checked = false;
+  showMenu();
   }
 }
 
-function classic(){
+function hawaiian(){
   if (customPizza5.checked == true){
     topping3.checked = true;
     topping6.checked = true;
+    showMenu();
 
 } else {
   topping3.checked = false;
   topping6.checked = false;
-
+  showMenu();
   }
 }
 
+
+function thankYou(){
+  var thankyou = document.getElementById("thankyou");
+  console.log("works");
+  thankyou.style.display = "block";
+}
