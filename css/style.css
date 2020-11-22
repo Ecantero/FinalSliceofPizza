@@ -113,11 +113,17 @@ body{
   .form-group{
     font-family: 'Crimson Text', serif;
   }
-  .form-control{
+  /* .form-control{
     display: none;
-  }
-  .btn-group{
+  } */
+  /* .btn-group{
     display: none;
+  } */
+   #menu1, #menu2, 
+   #menu3, #menu4, #menu5, 
+   #menu6, #menu7, #menu8, 
+   #menu9, #menu10{
+    display:none;
   }
   #sel1{
       display: block;
