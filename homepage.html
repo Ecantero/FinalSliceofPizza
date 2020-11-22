@@ -9,7 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
           </div>
          
           <li class="nav-item">
-            <a class="nav-link" href="order.html">Order Online</a>
+            <a class="nav-link" href="#">Order Online</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Menu</a>
@@ -53,13 +55,202 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-             
-                <img id='pizzaGraphic' src="images/cheese.png" alt="">
+              <div class="orderContainer">
+                <div class="col-md" id='pizzaCol'><img id='pizzaGraphic' src="images/cheese.png" alt=""></div>
+                <div class="col-md">
+                  <div class='sectionHead'>Chef's Favorites</div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza1">
+                      <label class="custom-control-label" for="customPizza1">Meat Lover's</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza2">
+                      <label class="custom-control-label" for="customPizza2">Bailey's Original</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza3">
+                      <label class="custom-control-label" for="customPizza3">Firecracker</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza4">
+                      <label class="custom-control-label" for="customPizza4">Veggie Delight</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza5">
+                      <label class="custom-control-label" for="customPizza5">Four Cheese</label>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md" id="toppingsContainer">
+                  
+                  <div class='sectionHead'>Toppings</div>
+                  <div class='row'>
+                      <div class="col-sm-6"><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping1">
+                        <label class="custom-control-label" for="topping1">Pepperoni</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping2">
+                        <label class="custom-control-label" for="topping2">Sausage</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping3">
+                        <label class="custom-control-label" for="topping3">Ham</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping4">
+                        <label class="custom-control-label" for="topping4">Bacon</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping5">
+                        <label class="custom-control-label" for="topping5">Shrimp</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping6">
+                        <label class="custom-control-label" for="topping6">Pineapples</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping7">
+                        <label class="custom-control-label" for="topping7">Bell Peppers</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping8">
+                        <label class="custom-control-label" for="topping8">Mushroooms</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping9">
+                        <label class="custom-control-label" for="topping9">Olives</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="topping10">
+                        <label class="custom-control-label" for="topping10">Banana Peppers</label>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Left</button>
+                          <button type="button" class="btn btn-secondary">Whole</button>
+                          <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
+                        <select class="form-control form-control-sm">
+                          <option>Extra</option>
+                          <option>Double</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    </div>
+                  </div>
+
+                <div class="col-md">
+                  <div class='sectionHead'>Size</div>
+                  <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" id="sel1">
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                      <option>X-Large</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class='sectionHead'>Price/Toppings</div>
+                </div>
+
+                <div class="col-md">Special Deal</div>
+
+              </div>
+                
                 <!-- <div id='price'> topping-price</div> -->
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Order Now</button>
             </div>
           </div>
       
