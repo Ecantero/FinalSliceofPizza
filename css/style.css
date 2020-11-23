@@ -348,8 +348,21 @@ body {
 
 #deal{
   display: none;
+  text-align: center;
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-size: 15px;
 }
-
+#totalText{
+  align-content: center;
+  text-align: center;
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+#text{
+  text-align: center;
+}
 #promise {
   text-align: center;
   font-family: "Italianno", cursive;
