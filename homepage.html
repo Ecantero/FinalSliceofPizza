@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script scr ="Deal.js"></script> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -283,14 +284,20 @@
                 </div>
                 <div class="col-md">
                   <div class='sectionHead'>Price/Toppings</div>
-                  <!-- <div  name="total" value="8.00"></div> -->
+                  <div name="total" id="priceText"></div>
                   
                   <label>Total: $ <input type="text" name="total" class="num" size="6" value="8.00" readonly="readonly" /></label>
                   
               </div>
             
-                <div class="col-md">Special Deal</div>
+                <div class="col-md">
+                  <div class='sectionHead'>
+                  <button type="button" class="btn btn-default" id="specialDeal">Special Deal</button>
+                </div>
+                </div>
+
                 </form>
+
               </div>
                 
                 <!-- <div id='price'> topping-price</div> -->

@@ -1,10 +1,10 @@
-
     var customPizza1 = document.getElementById("customPizza1");
     var customPizza2 = document.getElementById("customPizza2");
     var customPizza3 = document.getElementById("customPizza3");
     var customPizza4 = document.getElementById("customPizza4");
     var customPizza5 = document.getElementById("customPizza5");
 
+    var myVar = setInterval(pricing, 1000);
 
     var topping1 = document.getElementById("topping1");
     var topping2 = document.getElementById("topping2");
@@ -28,28 +28,26 @@
     var menu9 = document.getElementById("menu9");
     var menu10 = document.getElementById("menu10");
 
-    function myFunction(){
-    console.log('works');
-      
-  }
-  //   function attachCheckboxHandlers(){
-  //     var toppingsContainer = document.getElementById("toppingsContainer");
+    var specialDeal = document.getElementById("specialDeal");
+    // function attachCheckboxHandlers(){
+    //   var toppingsContainer = document.getElementById("toppingsContainer");
+    //   var priceText = document.getElementById("priceText");
     
-  //     // get reference to input elements in toppings container element
-  //     var toppingCheckbox = toppingsContainer.getElementsByTagName('input');
+    //   // get reference to input elements in toppings container element
+    //   var toppingCheckbox = toppingsContainer.getElementsByTagName('input');
     
-  //     // assign function to onclick property of each checkbox
-  //     for (var i=0, len=toppingCheckbox.length; i<len; i++) {
-  //         if ( toppingCheckbox[i].type === 'checkbox' ) {
-  //             toppingCheckbox[i].onclick = myFunction;
+    //   // assign function to onclick property of each checkbox
+    //   for (var i=0, len=toppingCheckbox.length; i<len; i++) {
+    //       if ( toppingCheckbox[i].type === 'checkbox' ) {
+    //           toppingCheckbox[i].onclick = updateTotal;
   
-  //         }
-  //     }
-  //   }
+    //       }
+    //   }
+    // }
     
-    // function updateTotal() {
+    // function updateTotal(e) {
     //   // 'this' is reference to checkbox clicked on
-    //   var form = document.getElementById('pizzaForm');
+    //   var form = this.form;
       
     //   // get current value in total text box, using parseFloat since it is a string
     //   var val = parseFloat( form.elements['total'].value );
@@ -80,41 +78,49 @@
     // }
     
     // // in script segment below form
-    
+    // attachCheckboxHandlers();
     
 function showMenu() {
    
     if (topping1.checked == true){
       
       menu1.style.display = "block";
-      
+      pricing();
     } else {
       menu1.style.display = "none";
-      
+      pricing();
     }
 
     if (topping2.checked == true){
         menu2.style.display = "block";
+        pricing();
     } else {
         menu2.style.display = "none";
+        pricing();
     }
  
     if (topping3.checked == true){
       menu3.style.display = "block";
+      pricing();
     } else {
       menu3.style.display = "none";
+      pricing();
     }
 
     if (topping4.checked == true){
         menu4.style.display = "block";
+        pricing();
       } else {
         menu4.style.display = "none";
+        pricing();
       }
 
     if (topping5.checked == true){
         menu5.style.display = "block";
+        pricing();
     } else {
         menu5.style.display = "none";
+        pricing();
     }
  
     if (topping6.checked == true){
@@ -244,13 +250,24 @@ function thankYou(){
 
 // get reference to element containing toppings checkboxes
 
-// function showChecked(){
-//   document.getElementById('priceText').innerHTML = toppingsSelected();
+function showChecked(){
+  document.getElementById('priceText').innerHTML = toppingsSelected();
   
-// }
-// function toppingsSelected(){
-//   return document.querySelectorAll("input[name=topping]:checked").length;
-// }
-// document.querySelectorAll("input[name=topping]").forEach(i=>{
-//   i.onclick = () => showChecked();
-//  });
+}
+function toppingsSelected(){
+  return document.querySelectorAll("input[name=topping]:checked").length;
+}
+document.querySelectorAll("input[name=topping]").forEach(i=>{
+  i.onclick = () => showChecked();
+ });
+
+ function pricing(){
+   if(toppingsSelected() >= 5){
+     
+    specialDeal.style.display = "block";
+   } else{
+    specialDeal.style.display = "none";
+   }
+ }
+ showChecked();
+ pricing();

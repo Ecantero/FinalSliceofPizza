@@ -131,6 +131,10 @@ body{
   #sel1{
       display: block;
   }
+  #specialDeal{
+    cursor: none;
+    display: none;
+  }
 /* --kombu-green: #263413ff;
 --rifle-green: #435433ff;
 --bistre: #402F20ff;
