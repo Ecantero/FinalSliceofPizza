@@ -33,7 +33,6 @@ var specialDeal = document.getElementById("specialDeal");
 
 var price = 0.0;
 
-
 const pepp = document.querySelector("input[name=topping1]");
 pepp.addEventListener("change", function () {
   if (this.checked) {
@@ -596,8 +595,8 @@ function thankYou() {
 const deal = document.getElementById("deal");
 
 var currentPrice = 0;
+var text = document.getElementById("priceText");
 function showChecked() {
-  let text = document.getElementById("priceText");
   if (price > 0 || price < 5) {
     currentPrice = price - 1;
     if (currentPrice < 0) {
@@ -609,8 +608,44 @@ function showChecked() {
     currentPrice = currentPrice - 1;
     deal.style.display = "block";
   }
-  text.innerText = `$ ${currentPrice}`;
+  totalPrice();
+  // text.innerText = `$ ${currentPrice}`;
 }
+
+var sizePrice;
+function changeFunc() {
+  var selectBox = document.getElementById("sel1");
+  let size = selectBox.options[selectBox.selectedIndex].value;
+  console.log(`price for size: ${size}`);
+  if (size == 0) {
+    sizePrice = 0;
+  }
+  if (size == 5) {
+    sizePrice = 5;
+  }
+  if (size == 10) {
+    sizePrice = 10;
+  }
+  if (size == 15) {
+    sizePrice = 15;
+  }
+  if (size == 20) {
+    sizePrice = 20;
+  }
+  showChecked();
+}
+
+function totalPrice() {
+  console.log(`topping ${currentPrice}`);
+  console.log(`size ${sizePrice}`);
+  if (sizePrice == "undefined") {
+    sizePrice = 0;
+  }
+  let total = sizePrice + currentPrice;
+  console.log(`total ${total}`)
+  text.innerText = `$ ${total}`;
+}
+
 function toppingsSelected() {
   return document.querySelectorAll("input[name=topping]:checked").length;
 }
