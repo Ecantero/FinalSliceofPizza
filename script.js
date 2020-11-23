@@ -1,3 +1,4 @@
+
     var customPizza1 = document.getElementById("customPizza1");
     var customPizza2 = document.getElementById("customPizza2");
     var customPizza3 = document.getElementById("customPizza3");
@@ -26,13 +27,70 @@
     var menu8 = document.getElementById("menu8");
     var menu9 = document.getElementById("menu9");
     var menu10 = document.getElementById("menu10");
+
+    function myFunction(){
+    console.log('works');
+      
+  }
+  //   function attachCheckboxHandlers(){
+  //     var toppingsContainer = document.getElementById("toppingsContainer");
+    
+  //     // get reference to input elements in toppings container element
+  //     var toppingCheckbox = toppingsContainer.getElementsByTagName('input');
+    
+  //     // assign function to onclick property of each checkbox
+  //     for (var i=0, len=toppingCheckbox.length; i<len; i++) {
+  //         if ( toppingCheckbox[i].type === 'checkbox' ) {
+  //             toppingCheckbox[i].onclick = myFunction;
   
+  //         }
+  //     }
+  //   }
+    
+    // function updateTotal() {
+    //   // 'this' is reference to checkbox clicked on
+    //   var form = document.getElementById('pizzaForm');
+      
+    //   // get current value in total text box, using parseFloat since it is a string
+    //   var val = parseFloat( form.elements['total'].value );
+      
+      
+    //   // if check box is checked, add its value to val, otherwise subtract it
+    //   if ( this.checked ) {
+    //       val += parseFloat(this.value);
+    //   } else {
+    //       val -= parseFloat(this.value);
+    //   }
+      
+    //   // format val with correct number of decimal places
+    //   // and use it to update value of total text box
+    //   form.elements['total'].value = formatDecimal(val);
+    // }
+      
+    // // format val to n number of decimal places
+    // // modified version of Danny Goodman's (JS Bible)
+    // function formatDecimal(val, n) {
+    //   n = n || 2;
+    //   var str = "" + Math.round ( parseFloat(val) * Math.pow(10, n) );
+    //   while (str.length <= n) {
+    //       str = "0" + str;
+    //   }
+    //   var pt = str.length - n;
+    //   return str.slice(0,pt) + "." + str.slice(pt);
+    // }
+    
+    // // in script segment below form
+    
+    
 function showMenu() {
-  
+   
     if (topping1.checked == true){
+      
       menu1.style.display = "block";
+      
     } else {
       menu1.style.display = "none";
+      
     }
 
     if (topping2.checked == true){
@@ -88,10 +146,11 @@ function showMenu() {
     } else {
         menu10.style.display = "none";
     }
-   
+    
 }
 
 function meatLovers(){
+
     if (customPizza1.checked == true){
         topping1.checked = true;
         topping2.checked = true;
@@ -104,7 +163,9 @@ function meatLovers(){
       topping3.checked = false;
       topping4.checked = false;
       showMenu();
+      
     }
+  
 }
 
 function baileysOriginal(){
@@ -170,6 +231,18 @@ function thankYou(){
   console.log("works");
   thankyou.style.display = "block";
 }
+
+
+
+
+
+
+
+
+
+
+
+// get reference to element containing toppings checkboxes
 
 // function showChecked(){
 //   document.getElementById('priceText').innerHTML = toppingsSelected();

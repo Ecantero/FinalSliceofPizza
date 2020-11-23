@@ -48,6 +48,7 @@
       
     </div>
     <div class="col-sm-4" id='buttonContainer'>
+      
       <button type="button" class="btn" data-toggle="modal" data-target="#pizza">Order Now</button>
       
       <div id="pizza" class="modal fade" role="dialog">
@@ -62,11 +63,12 @@
             </div>
             <div class="modal-body">
               <div class="orderContainer">
+                <form action="#" method="post" class="demoForm" id="pizzaForm">
                 <div class="col-md" id='pizzaCol'><img id='pizzaGraphic' src="images/cheese.png" alt=""></div>
                 <div class="col-md">
                   <div class='sectionHead'>Chef's Favorites</div>
                     <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="customPizza1" onclick="meatLovers()">
+                      <input type="checkbox" class="custom-control-input" id="customPizza1" onclick="meatLovers();">
                       <label class="custom-control-label" for="customPizza1">Meat Lover's</label>
                     </div>
                     <div class="custom-control custom-switch">
@@ -94,7 +96,7 @@
                   <div class='sectionHead'>Toppings</div>
                   <div class='row'>
                       <div class="col-sm-6"><div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping1"  onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping1"  onclick="showMenu();updateTotal();">
                         <label class="custom-control-label" for="topping1">Pepperoni</label>
                         <div id='menu1'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -111,7 +113,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping2" onclick="showMenu()">
+                        <input type="checkbox" value=".40" name="topping" class="custom-control-input" id="topping2" onclick="showMenu()">
                         <label class="custom-control-label" for="topping2">Sausage</label>
                         <div id='menu2'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -127,7 +129,7 @@
                       </div>
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox"  name="topping" class="custom-control-input" id="topping3" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping3" onclick="showMenu()">
                         <label class="custom-control-label" for="topping3">Ham</label>
                         <div id='menu3'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -144,7 +146,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping4" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping4" onclick="showMenu()">
                         <label class="custom-control-label" for="topping4">Bacon</label>
                         <div id='menu4'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -161,7 +163,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping5" onclick="showMenu()">
+                        <input type="checkbox" value=".60" name="topping" class="custom-control-input" id="topping5" onclick="showMenu()">
                         <label class="custom-control-label" for="topping5">Shrimp</label>
                         <div id='menu5'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -184,7 +186,7 @@
 
                     <div class="col-sm-6">
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping6" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping6" onclick="showMenu()">
                         <label class="custom-control-label" for="topping6">Pineapples</label>
                         <div id='menu6'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -200,7 +202,7 @@
                       </div>
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping7" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping7" onclick="showMenu()">
                         <label class="custom-control-label" for="topping7">Bell Peppers</label>
                         <div id='menu7'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -217,7 +219,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping8" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping8" onclick="showMenu()">
                         <label class="custom-control-label" for="topping8">Mushroooms</label>
                         <div id='menu8'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -232,7 +234,7 @@
                         </div>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping9" onclick="showMenu()">
+                        <input type="checkbox" value=".30" name="topping" class="custom-control-input" id="topping9" onclick="showMenu()">
                         <label class="custom-control-label" for="topping9">Olives</label>
                         <div id='menu9'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -247,7 +249,7 @@
                         </div>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping10" onclick="showMenu()">
+                        <input type="checkbox" value=".20" name="topping" class="custom-control-input" id="topping10" onclick="showMenu()">
                         <label class="custom-control-label" for="topping10">Red Chili Flakes</label>
                         <div id='menu10'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -264,6 +266,7 @@
                     </div>
 
                     </div>
+                  
                   </div>
 
                 <div class="col-md">
@@ -280,11 +283,14 @@
                 </div>
                 <div class="col-md">
                   <div class='sectionHead'>Price/Toppings</div>
-                  <div id="priceText"></div>
-                </div>
-
+                  <!-- <div  name="total" value="8.00"></div> -->
+                  
+                  <label>Total: $ <input type="text" name="total" class="num" size="6" value="8.00" readonly="readonly" /></label>
+                  
+              </div>
+            
                 <div class="col-md">Special Deal</div>
-
+                </form>
               </div>
                 
                 <!-- <div id='price'> topping-price</div> -->
