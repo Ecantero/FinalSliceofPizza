@@ -24,6 +24,7 @@ body{
     color: #f7c162ff;
 }
 .container{
+    margin-top: 0px;
     background-image: url('../images/pizza2.jpg');
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
@@ -134,6 +135,20 @@ body{
   #specialDeal{
     cursor: none;
     display: none;
+  }
+
+  #promise{
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    margin-top: 20px;
+    color:#790209ff;
+  }
+  #promiseText{
+    text-align: center;
+    color:#000;
+    font-family: 'Crimson Text', serif;
+    padding-bottom: 30px;
   }
 /* --kombu-green: #263413ff;
 --rifle-green: #435433ff;
