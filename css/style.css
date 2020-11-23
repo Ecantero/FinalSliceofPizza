@@ -57,13 +57,13 @@ body {
   font-size: 30px;
 }
 
-.modal-body {
-  /* display: flex;
+/*.modal-body{
+     display: flex;
     align-content: center;
-    justify-content: center; */
-}
-.orderContainer {
-  flex-direction: column;
+    justify-content: center; 
+}*/
+.orderContainer{
+    flex-direction: column;
 }
 #pizzaCol {
   display: flex;
@@ -124,21 +124,19 @@ body {
 /* .btn-group{
     display: none;
   } */
-#menu1,
-#menu2,
-#menu3,
-#menu4,
-#menu5,
-#menu6,
-#menu7,
-#menu8,
-#menu9,
-#menu10 {
-  display: none;
-}
-#sel1 {
-  display: block;
-}
+   #menu1, #menu2, 
+   #menu3, #menu4, #menu5, 
+   #menu6, #menu7, #menu8, 
+   #menu9, #menu10{
+    display:none;
+  }
+  #sel1{
+      display: block;
+  }
+  #specialDeal{
+    cursor: none;
+    display: none;
+  }
 /* --kombu-green: #263413ff;
 --rifle-green: #435433ff;
 --bistre: #402F20ff;

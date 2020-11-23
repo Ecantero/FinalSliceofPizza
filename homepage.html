@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>The Hearty Slice</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
+<head>
+  <title>The Hearty Slice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script scr ="Deal.js"></script> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
     <nav class="navbar navbar-expand-sm">
       <!-- Links -->
       <ul class="navbar-nav">
@@ -47,6 +40,47 @@
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>Thank you!</strong> Your order has just reached our kitchen.
     </div>
+    <div class="col-sm-4" id='buttonContainer'>
+      
+      <button type="button" class="btn" data-toggle="modal" data-target="#pizza">Order Now</button>
+      
+      <div id="pizza" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <div class="modal-title">The Hearty Slice Factory</div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="orderContainer">
+                <form action="#" method="post" class="demoForm" id="pizzaForm">
+                <div class="col-md" id='pizzaCol'><img id='pizzaGraphic' src="images/cheese.png" alt=""></div>
+                <div class="col-md">
+                  <div class='sectionHead'>Chef's Favorites</div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza1" onclick="meatLovers();">
+                      <label class="custom-control-label" for="customPizza1">Meat Lover's</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza2" onclick="baileysOriginal()">
+                      <label class="custom-control-label" for="customPizza2">Bailey's Original</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza3" onclick="fireCracker()">
+                      <label class="custom-control-label" for="customPizza3">Firecracker</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza4"onclick="veggieDelight()">
+                      <label class="custom-control-label" for="customPizza4">Veggie Delight</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customPizza5"onclick="hawaiian()">
+                      <label class="custom-control-label" for="customPizza5">Hawaiian</label>
+                    </div>
+                </div>
 
     <div class="container">
       <div class="row">
@@ -488,6 +522,8 @@
                       <div class="sectionHead">Price/Toppings</div>
                       <div id="priceText"></div>
                     </div>
+                  
+                  </div>
 
                     <div class="col-md">Special Deal</div>
                   </div>
@@ -505,6 +541,22 @@
                     Order Now
                   </button>
                 </div>
+                <div class="col-md">
+                  <div class='sectionHead'>Price/Toppings</div>
+                  <div name="total" id="priceText"></div>
+                  
+                  <label>Total: $ <input type="text" name="total" class="num" size="6" value="8.00" readonly="readonly" /></label>
+                  
+              </div>
+            
+                <div class="col-md">
+                  <div class='sectionHead'>
+                  <button type="button" class="btn btn-default" id="specialDeal">Special Deal</button>
+                </div>
+                </div>
+
+                </form>
+
               </div>
             </div>
           </div>
