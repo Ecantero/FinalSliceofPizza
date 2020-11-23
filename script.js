@@ -5,6 +5,7 @@
     var customPizza5 = document.getElementById("customPizza5");
 
     var myVar = setInterval(pricing, 1000);
+    var myVar2 = setInterval(showMenu,1000);
 
     var topping1 = document.getElementById("topping1");
     var topping2 = document.getElementById("topping2");
@@ -85,42 +86,42 @@ function showMenu() {
     if (topping1.checked == true){
       
       menu1.style.display = "block";
-      pricing();
+      
     } else {
       menu1.style.display = "none";
-      pricing();
+      
     }
 
     if (topping2.checked == true){
         menu2.style.display = "block";
-        pricing();
+        
     } else {
         menu2.style.display = "none";
-        pricing();
+       
     }
  
     if (topping3.checked == true){
       menu3.style.display = "block";
-      pricing();
+      
     } else {
       menu3.style.display = "none";
-      pricing();
+     
     }
 
     if (topping4.checked == true){
         menu4.style.display = "block";
-        pricing();
+        
       } else {
         menu4.style.display = "none";
-        pricing();
+       
       }
 
     if (topping5.checked == true){
         menu5.style.display = "block";
-        pricing();
+        
     } else {
         menu5.style.display = "none";
-        pricing();
+        
     }
  
     if (topping6.checked == true){
@@ -269,5 +270,4 @@ document.querySelectorAll("input[name=topping]").forEach(i=>{
     specialDeal.style.display = "none";
    }
  }
- showChecked();
- pricing();
+ 
