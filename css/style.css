@@ -354,6 +354,7 @@ body {
   font-size: 15px;
 }
 #totalText{
+  margin-left: 195px;
   align-content: center;
   text-align: center;
   color: #000;
