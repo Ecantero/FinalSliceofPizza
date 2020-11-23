@@ -1,636 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>The Hearty Slice</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script scr ="Deal.js"></script> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm">
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="homepage.html"> The Hearty Slice</a>
-        </div>
 
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Order Online</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Specials</a>
-        </li> -->
-      </ul>
-    </nav>
+<head>
+  <title>The Hearty Slice</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script scr ="Deal.js"></script> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
 
-    <div class="alert alert-success alert-dismissible fade show" id="thankyou">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <strong>Thank you!</strong> Your order has just reached our kitchen.
-    </div>
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="homepage.html"> The Hearty Slice</a>
+      </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4" id="buttonContainer">
-          <button
-            type="button"
-            class="btn"
-            data-toggle="modal"
-            data-target="#pizza"
-          >
-            Order Now
-          </button>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Order Online</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Specials</a>
+      </li>
+    </ul>
+  </nav>
 
-          <div id="pizza" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="modal-title">The Hearty Slice Factory</div>
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="orderContainer">
-                    <form
-                      action="#"
-                      method="post"
-                      class="demoForm"
-                      id="pizzaForm"
-                    >
-                      <div class="col-md" id="pizzaCol">
-                        <img id="pizzaGraphic" src="images/cheese.png" alt="" />
-                        <img id="peppLeft" src="images/pepperoni_left.png" alt="" />
-                        <img id="peppRight" src="images/pepperoni_right.png" alt="" />
-                        <img id="sausageLeft" src="images/sausage_left.png" alt="" />
-                        <img id="sausageRight" src="images/sausage_right.png" alt="" />
-                        <img id="hamLeft" src="images/ham_left.png" alt="" />
-                        <img id="hamRight" src="images/ham_right.png" alt="" />
-                        <img id="baconLeft" src="images/bacon_left.png" alt="" />
-                        <img id="baconRight" src="images/bacon_right.png" alt="" />
-                        <img id="shrimpLeft" src="images/Shrimp_left.png" alt="" />
-                        <img id="shrimpRight" src="images/Shrimp_right.png" alt="" />
-                        <img id="pineappleLeft" src="images/pineapple_left.png" alt="" />
-                        <img id="pineappleRight" src="images/pineapple_right.png" alt="" />
-                        <img id="bellLeft" src="images/bananaPepper_left.png" alt="" />
-                        <img id="bellRight" src="images/bananaPepper_right.png" alt="" />
-                        <img id="mushroomLeft" src="images/mushroom_left.png" alt="" />
-                        <img id="mushroomRight" src="images/mushroom_right.png" alt="" />
-                        <img id="oliveLeft" src="images/olive_left.png" alt="" />
-                        <img id="oliveRight" src="images/olive_right.png" alt="" />
-                        <img id="cheetoLeft" src="images/hot_cheeto_left.png" alt="" />
-                        <img id="cheetoRight" src="images/hot_cheeto_right.png" alt="" />
+  <div class="alert alert-success alert-dismissible fade show" id="thankyou">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Thank you!</strong> Your order has just reached our kitchen.
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4" id="buttonContainer">
+        <button type="button" class="btn" data-toggle="modal" data-target="#pizza">
+          Order Now
+        </button>
+
+        <div id="pizza" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title">The Hearty Slice Factory</div>
+                <button type="button" class="close" data-dismiss="modal"> &times; </button>
+              </div>
+              <div class="modal-body">
+                <div class="orderContainer">
+                  <form action="#" method="post" class="demoForm" id="pizzaForm">
+                    <div class="col-md" id="pizzaCol">
+                      <img id="pizzaGraphic" src="images/cheese.png" alt="" />
+                      <img id="peppLeft" src="images/pepperoni_left.png" alt="" />
+                      <img id="peppRight" src="images/pepperoni_right.png" alt="" />
+                      <img id="sausageLeft" src="images/sausage_left.png" alt="" />
+                      <img id="sausageRight" src="images/sausage_right.png" alt="" />
+                      <img id="hamLeft" src="images/ham_left.png" alt="" />
+                      <img id="hamRight" src="images/ham_right.png" alt="" />
+                      <img id="baconLeft" src="images/bacon_left.png" alt="" />
+                      <img id="baconRight" src="images/bacon_right.png" alt="" />
+                      <img id="shrimpLeft" src="images/Shrimp_left.png" alt="" />
+                      <img id="shrimpRight" src="images/Shrimp_right.png" alt="" />
+                      <img id="pineappleLeft" src="images/pineapple_left.png" alt="" />
+                      <img id="pineappleRight" src="images/pineapple_right.png" alt="" />
+                      <img id="bellLeft" src="images/bananaPepper_left.png" alt="" />
+                      <img id="bellRight" src="images/bananaPepper_right.png" alt="" />
+                      <img id="mushroomLeft" src="images/mushroom_left.png" alt="" />
+                      <img id="mushroomRight" src="images/mushroom_right.png" alt="" />
+                      <img id="oliveLeft" src="images/olive_left.png" alt="" />
+                      <img id="oliveRight" src="images/olive_right.png" alt="" />
+                      <img id="cheetoLeft" src="images/hot_cheeto_left.png" alt="" />
+                      <img id="cheetoRight" src="images/hot_cheeto_right.png" alt="" />
+                    </div>
+
+                    <div class="col-md">
+                      <div class="sectionHead">Chef's Favorites</div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customPizza1" onclick="meatLovers();" />
+                        <label class="custom-control-label" for="customPizza1">Meat Lover's</label>
                       </div>
-                      <div class="col-md">
-                        <div class="sectionHead">Chef's Favorites</div>
-                        <div class="custom-control custom-switch">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customPizza1"
-                            onclick="meatLovers();"
-                          />
-                          <label class="custom-control-label" for="customPizza1"
-                            >Meat Lover's</label
-                          >
-                        </div>
-                        <div class="custom-control custom-switch">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customPizza2"
-                            onclick="baileysOriginal()"
-                          />
-                          <label class="custom-control-label" for="customPizza2"
-                            >Bailey's Original</label
-                          >
-                        </div>
-                        <div class="custom-control custom-switch">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customPizza3"
-                            onclick="fireCracker()"
-                          />
-                          <label class="custom-control-label" for="customPizza3"
-                            >Firecracker</label
-                          >
-                        </div>
-                        <div class="custom-control custom-switch">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customPizza4"
-                            onclick="veggieDelight()"
-                          />
-                          <label class="custom-control-label" for="customPizza4"
-                            >Veggie Delight</label
-                          >
-                        </div>
-                        <div class="custom-control custom-switch">
-                          <input
-                            type="checkbox"
-                            class="custom-control-input"
-                            id="customPizza5"
-                            onclick="hawaiian()"
-                          />
-                          <label class="custom-control-label" for="customPizza5"
-                            >Hawaiian</label
-                          >
-                        </div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customPizza2"
+                          onclick="baileysOriginal()" />
+                        <label class="custom-control-label" for="customPizza2">Bailey's Original</label>
                       </div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customPizza3" onclick="fireCracker()" />
+                        <label class="custom-control-label" for="customPizza3">Firecracker</label>
+                      </div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customPizza4"
+                          onclick="veggieDelight()" />
+                        <label class="custom-control-label" for="customPizza4">Veggie Delight</label>
+                      </div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customPizza5" onclick="hawaiian()" />
+                        <label class="custom-control-label" for="customPizza5">Hawaiian</label>
+                      </div>
+                    </div>
 
-                      <div class="col-md" id="toppingsContainer">
-                        <div class="sectionHead">Toppings</div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping1"
-                                class="custom-control-input"
-                                id="topping1"
-                              />
-                              <label class="custom-control-label" for="topping1"
-                                >Pepperoni</label
-                              >
-                              <div id="menu1">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPeppLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPepp()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPeppRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                    <div class="col-md" id="toppingsContainer">
+                      <div class="sectionHead">Toppings</div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping1" class="custom-control-input"
+                              id="topping1" />
+                            <label class="custom-control-label" for="topping1">Pepperoni</label>
+                            <div id="menu1">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showPeppLeft()">Left</button>
+                                <button type="button" class="btn btn-secondary" onclick="showPepp()">Whole</button>
+                                <button type="button" class="btn btn-secondary" onclick="showPeppRight()">Right</button>
                               </div>
-                            </div>
 
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".40"
-                                name="topping2"
-                                class="custom-control-input"
-                                id="topping2"
-                              />
-                              <label class="custom-control-label" for="topping2"
-                                >Sausage</label
-                              >
-                              <div id="menu2">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showSausageLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showSausage()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showSausageRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping3"
-                                class="custom-control-input"
-                                id="topping3"
-                              />
-                              <label class="custom-control-label" for="topping3"
-                                >Ham</label
-                              >
-                              <div id="menu3">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showHamLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showHam()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showHamRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping4"
-                                class="custom-control-input"
-                                id="topping4"
-                              />
-                              <label class="custom-control-label" for="topping4"
-                                >Bacon</label
-                              >
-                              <div id="menu4">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showBaconLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showBacon()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showBaconRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".60"
-                                name="topping5"
-                                class="custom-control-input"
-                                id="topping5"
-                              />
-                              <label class="custom-control-label" for="topping5"
-                                >Shrimp</label
-                              >
-                              <div id="menu5">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showShrimpLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showShrimp()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showShrimpRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
-                              </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
                           </div>
 
-                          <div class="col-sm-6">
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping6"
-                                class="custom-control-input"
-                                id="topping6"
-                              />
-                              <label class="custom-control-label" for="topping6"
-                                >Pineapples</label
-                              >
-                              <div id="menu6">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPineappleLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPineapple()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPineappleRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".40" name="topping2" class="custom-control-input"
+                              id="topping2" />
+                            <label class="custom-control-label" for="topping2">Sausage</label>
+                            <div id="menu2">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showSausageLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showSausage()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showSausageRight()">
+                                  Right
+                                </button>
                               </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
+                          </div>
 
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping7"
-                                class="custom-control-input"
-                                id="topping7"
-                              />
-                              <label class="custom-control-label" for="topping7"
-                                >Bell Peppers</label
-                              >
-                              <div id="menu7">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPeppersLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPeppers()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showPeppersRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping3" class="custom-control-input"
+                              id="topping3" />
+                            <label class="custom-control-label" for="topping3">Ham</label>
+                            <div id="menu3">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showHamLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showHam()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showHamRight()">
+                                  Right
+                                </button>
                               </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
+                          </div>
 
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping8"
-                                class="custom-control-input"
-                                id="topping8"
-                              />
-                              <label class="custom-control-label" for="topping8"
-                                >Mushroooms</label
-                              >
-                              <div id="menu8">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showMushroomLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showMushroom()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showMushroomRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping4" class="custom-control-input"
+                              id="topping4" />
+                            <label class="custom-control-label" for="topping4">Bacon</label>
+                            <div id="menu4">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showBaconLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showBacon()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showBaconRight()">
+                                  Right
+                                </button>
                               </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".30"
-                                name="topping9"
-                                class="custom-control-input"
-                                id="topping9"
-                              />
-                              <label class="custom-control-label" for="topping9"
-                                >Olives</label
-                              >
-                              <div id="menu9">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showOliveLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showOlive()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showOliveRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                          </div>
+
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".60" name="topping5" class="custom-control-input"
+                              id="topping5" />
+                            <label class="custom-control-label" for="topping5">Shrimp</label>
+                            <div id="menu5">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showShrimpLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showShrimp()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showShrimpRight()">
+                                  Right
+                                </button>
                               </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                              <input
-                                type="checkbox"
-                                value=".20"
-                                name="topping10"
-                                class="custom-control-input"
-                                id="topping10"
-                              />
-                              <label
-                                class="custom-control-label"
-                                for="topping10"
-                                >Hot Cheetos</label
-                              >
-                              <div id="menu10">
-                                <div
-                                  class="btn-group"
-                                  role="group"
-                                  aria-label="Basic example"
-                                >
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showCheetoLeft()"
-                                  >
-                                    Left
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showCheeto()"
-                                  >
-                                    Whole
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-secondary"
-                                    onclick="showCheetoRight()"
-                                  >
-                                    Right
-                                  </button>
-                                </div>
-                                <select class="form-control form-control-sm">
-                                  <option>Extra</option>
-                                  <option>Double</option>
-                                </select>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping6" class="custom-control-input"
+                              id="topping6" />
+                            <label class="custom-control-label" for="topping6">Pineapples</label>
+                            <div id="menu6">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showPineappleLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showPineapple()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showPineappleRight()">
+                                  Right
+                                </button>
                               </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping7" class="custom-control-input"
+                              id="topping7" />
+                            <label class="custom-control-label" for="topping7">Bell Peppers</label>
+                            <div id="menu7">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showPeppersLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showPeppers()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showPeppersRight()">
+                                  Right
+                                </button>
+                              </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping8" class="custom-control-input"
+                              id="topping8" />
+                            <label class="custom-control-label" for="topping8">Mushroooms</label>
+                            <div id="menu8">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showMushroomLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showMushroom()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showMushroomRight()">
+                                  Right
+                                </button>
+                              </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".30" name="topping9" class="custom-control-input"
+                              id="topping9" />
+                            <label class="custom-control-label" for="topping9">Olives</label>
+                            <div id="menu9">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showOliveLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showOlive()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showOliveRight()">
+                                  Right
+                                </button>
+                              </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" value=".20" name="topping10" class="custom-control-input"
+                              id="topping10" />
+                            <label class="custom-control-label" for="topping10">Hot Cheetos</label>
+                            <div id="menu10">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" onclick="showCheetoLeft()">
+                                  Left
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showCheeto()">
+                                  Whole
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="showCheetoRight()">
+                                  Right
+                                </button>
+                              </div>
+                              <select class="form-control form-control-sm">
+                                <option>Extra</option>
+                                <option>Double</option>
+                              </select>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
                       <div class="col-md">
                         <div class="sectionHead">Size</div>
@@ -653,53 +364,53 @@
                           <div name="total" id="priceText"></div>
                         </label>
                       </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="sectionHead">Pricing</div>
 
-                      <div class="col-md">
-                        <div class="sectionHead">
-                          <button
-                            type="button"
-                            class="btn btn-default"
-                            id="specialDeal"
-                          >
-                            Special Deal: $3
-                          </button>
-                        </div>
+                      <label id="totalText">Total:
+                        <div name="total" id="priceText"></div>
+                      </label>
+                    </div>
+
+                    <div class="col-md">
+                      <div class="sectionHead">
+                        <p id="deal"> <button type="button" class="btn btn-default">
+                            Special Deal
+                          </button><br> 5 toppings is $3, after that $1 each topping</p>
                       </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
+                </div>
 
-                  <!-- <div id='price'> topping-price</div> -->
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-default"
-                    data-dismiss="modal"
-                    id="orderButton"
-                    onclick="thankYou()"
-                  >
-                    Order Now
-                  </button>
-                </div>
+                <!-- <div id='price'> topping-price</div> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton"
+                  onclick="thankYou()">
+                  Order Now
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4"></div>
       </div>
+      <div class="col-sm-4"></div>
     </div>
-    <div id="promise">Our Promise</div>
-    <p id="promiseText">
-      Whether you’ve invited the gang over to watch the big game or you’re
-      settling in for family movie night, we <br />
-      create made-to-order meals that satisfy everyone. Delivery simply adds
-      convenience to deliciousness.<br />
-      When you place your delivery order, you also place your trust in the
-      brand. Our store does everything<br />
-      they can to make sure their pizza experts create your meal exactly the way
-      you want it, with piping hot goodness<br />
-      delivered right to your door.
-    </p>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <div id="promise">Our Promise</div>
+  <p id="promiseText">
+    Whether you’ve invited the gang over to watch the big game or you’re
+    settling in for family movie night, we <br />
+    create made-to-order meals that satisfy everyone. Delivery simply adds
+    convenience to deliciousness.<br />
+    When you place your delivery order, you also place your trust in the
+    brand. Our store does everything<br />
+    they can to make sure their pizza experts create your meal exactly the way
+    you want it, with piping hot goodness<br />
+    delivered right to your door.
+  </p>
+  <script src="script.js"></script>
+</body>
+
 </html>
