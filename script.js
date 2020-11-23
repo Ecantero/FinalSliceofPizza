@@ -171,6 +171,48 @@ function thankYou(){
   thankyou.style.display = "block";
 }
 
+function Validate() {
+  var checked = 0;
+
+  // var topping1 = document.getElementById("topping1");
+  // var topping2 = document.getElementById("topping2");
+  // var topping3 = document.getElementById("topping3");
+  // var topping4 = document.getElementById("topping4");
+  // var topping5 = document.getElementById("topping5");
+  // var topping6 = document.getElementById("topping6");
+  // var topping7 = document.getElementById("topping7");
+  // var topping8 = document.getElementById("topping8");
+  // var topping9 = document.getElementById("topping9");
+  // var topping10 = document.getElementById("topping10");
+
+  //Reference all the CheckBoxes
+  var chks = topping1.getElementsByTagName("checkbox");
+  var chks = topping2.getElementsByTagName("checkbox");
+  var chks = topping3.getElementsByTagName("checkbox");
+  var chks = topping4.getElementsByTagName("checkbox");
+  var chks = topping5.getElementsByTagName("checkbox");
+  var chks = topping6.getElementsByTagName("checkbox");
+  var chks = topping7.getElementsByTagName("checkbox");
+  var chks = topping8.getElementsByTagName("checkbox");
+  var chks = topping9.getElementsByTagName("checkbox");
+  var chks = topping10.getElementsByTagName("checkbox");
+
+  //Loop and count the number of checked CheckBoxes.
+  for (var i = 0; i < chks.length; i++) {
+      if (chks[i].checked) {
+          checked++;
+      }
+  }
+
+  if (checked > 0) {
+      alert(checked + " CheckBoxe(s) are checked.");
+      return true;
+  } else {
+      alert("Please select CheckBoxe(s).");
+      return false;
+  }
+};
+
 // function showChecked(){
 //   document.getElementById('priceText').innerHTML = toppingsSelected();
   

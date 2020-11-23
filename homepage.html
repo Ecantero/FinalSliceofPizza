@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script scr ="Deal.js"></script> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -94,7 +95,7 @@
                   <div class='sectionHead'>Toppings</div>
                   <div class='row'>
                       <div class="col-sm-6"><div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping1"  onclick="showMenu()">
+                        <input type="checkbox" value="1" name="topping" class="custom-control-input" id="topping1"  onclick="showMenu()">
                         <label class="custom-control-label" for="topping1">Pepperoni</label>
                         <div id='menu1'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -111,7 +112,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping2" onclick="showMenu()">
+                        <input type="checkbox" value="2" name="topping" class="custom-control-input" id="topping2" onclick="showMenu()">
                         <label class="custom-control-label" for="topping2">Sausage</label>
                         <div id='menu2'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -127,7 +128,7 @@
                       </div>
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox"  name="topping" class="custom-control-input" id="topping3" onclick="showMenu()">
+                        <input type="checkbox" value="3" name="topping" class="custom-control-input" id="topping3" onclick="showMenu()">
                         <label class="custom-control-label" for="topping3">Ham</label>
                         <div id='menu3'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -144,7 +145,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping4" onclick="showMenu()">
+                        <input type="checkbox" value="4" name="topping" class="custom-control-input" id="topping4" onclick="showMenu()">
                         <label class="custom-control-label" for="topping4">Bacon</label>
                         <div id='menu4'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -161,7 +162,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping5" onclick="showMenu()">
+                        <input type="checkbox" value="5" name="topping" class="custom-control-input" id="topping5" onclick="showMenu()">
                         <label class="custom-control-label" for="topping5">Shrimp</label>
                         <div id='menu5'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -184,7 +185,7 @@
 
                     <div class="col-sm-6">
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping6" onclick="showMenu()">
+                        <input type="checkbox" value="6" name="topping" class="custom-control-input" id="topping6" onclick="showMenu()">
                         <label class="custom-control-label" for="topping6">Pineapples</label>
                         <div id='menu6'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -200,7 +201,7 @@
                       </div>
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping7" onclick="showMenu()">
+                        <input type="checkbox" value="7" name="topping" class="custom-control-input" id="topping7" onclick="showMenu()">
                         <label class="custom-control-label" for="topping7">Bell Peppers</label>
                         <div id='menu7'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -217,7 +218,7 @@
 
 
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping8" onclick="showMenu()">
+                        <input type="checkbox" value="8" name="topping" class="custom-control-input" id="topping8" onclick="showMenu()">
                         <label class="custom-control-label" for="topping8">Mushroooms</label>
                         <div id='menu8'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -232,7 +233,7 @@
                         </div>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping9" onclick="showMenu()">
+                        <input type="checkbox" value="9" name="topping" class="custom-control-input" id="topping9" onclick="showMenu()">
                         <label class="custom-control-label" for="topping9">Olives</label>
                         <div id='menu9'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -247,7 +248,7 @@
                         </div>
                       </div>
                       <div class="custom-control custom-checkbox">
-                        <input type="checkbox" name="topping" class="custom-control-input" id="topping10" onclick="showMenu()">
+                        <input type="checkbox" value="10" name="topping" class="custom-control-input" id="topping10" onclick="showMenu()">
                         <label class="custom-control-label" for="topping10">Red Chili Flakes</label>
                         <div id='menu10'>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -284,6 +285,33 @@
                 </div>
 
                 <div class="col-md">Special Deal</div>
+
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+<input type = "button" value = "Check" onclick = "return Validate()" />
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You may have a deal!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Apply deal if you have 5 toppings or more!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Apply deal</button>
+      </div>
+    </div>
+  </div>
+</div>
 
               </div>
                 
