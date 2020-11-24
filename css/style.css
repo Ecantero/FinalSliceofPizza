@@ -23,6 +23,7 @@ body {
   color: #f7c162ff;
 }
 .container {
+  margin-top: 0px;
   background-image: url("../images/pizza2.jpg");
   background-repeat: no-repeat;
   background-position: center; /* Center the image */
@@ -47,7 +48,6 @@ body {
   display: none;
 }
 
-
 /* order page */
 
 .modal-header {
@@ -62,8 +62,8 @@ body {
     align-content: center;
     justify-content: center; 
 }*/
-.orderContainer{
-    flex-direction: column;
+.orderContainer {
+  flex-direction: column;
 }
 #pizzaCol {
   display: flex;
@@ -72,7 +72,209 @@ body {
 #pizzaGraphic {
   max-width: 50%;
   max-height: 50%;
+  z-index: 1;
 }
+
+#peppLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#peppRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#sausageLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#sausageRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#hamLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#hamRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#baconLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#baconRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#shrimpLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#shrimpRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#pineappleLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#pineappleRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#bellLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#bellRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#mushroomLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#mushroomRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#oliveLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#oliveRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#cheetoLeft{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  right: 233px;
+  z-index: 2;
+  display: none;
+}
+
+#cheetoRight{
+  max-width: 50%;
+  max-height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 233px;
+  z-index: 2;
+  display: none;
+}
+
 .sectionHead {
   font-family: "Italianno", cursive;
   font-size: 30px;
@@ -124,19 +326,57 @@ body {
 /* .btn-group{
     display: none;
   } */
-   #menu1, #menu2, 
-   #menu3, #menu4, #menu5, 
-   #menu6, #menu7, #menu8, 
-   #menu9, #menu10{
-    display:none;
-  }
-  #sel1{
-      display: block;
-  }
-  #specialDeal{
-    cursor: none;
-    display: none;
-  }
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5,
+#menu6,
+#menu7,
+#menu8,
+#menu9,
+#menu10 {
+  display: none;
+}
+#sel1 {
+  display: block;
+}
+#specialDeal {
+  cursor: none;
+  display: none;
+}
+
+#deal{
+  display: none;
+  text-align: center;
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-size: 15px;
+}
+#totalText{
+  margin-left: 195px;
+  align-content: center;
+  text-align: center;
+  color: #000;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+#text{
+  text-align: center;
+}
+#promise {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+  color: #790209ff;
+}
+#promiseText {
+  text-align: center;
+  color: #000;
+  font-family: "Crimson Text", serif;
+  padding-bottom: 30px;
+}
 /* --kombu-green: #263413ff;
 --rifle-green: #435433ff;
 --bistre: #402F20ff;
