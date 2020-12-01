@@ -591,6 +591,7 @@ function thankYou() {
   thankyou.style.display = "block";
 }
 
+
 // get reference to element containing toppings checkboxes
 const deal = document.getElementById("deal");
 
