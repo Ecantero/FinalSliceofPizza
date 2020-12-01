@@ -35,7 +35,7 @@ var price = 0.0;
 
 function thankYou(){
   var thankyou = document.getElementById("thankyou");
-  thankyou.style.display = "block";
+  thankyou.style.display = "]";
 }
 
 

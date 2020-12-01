@@ -19,6 +19,9 @@ body {
   align-content: flex-end;
   font-size: 20px;
 }
+.nav-item{
+  margin:10px;
+}
 .nav-link:hover {
   color: #f7c162ff;
 }
@@ -40,15 +43,21 @@ body {
   align-items: center;
 }
 .btn {
-  margin: 10px;
+  margin: auto;
   background-color: #435433ff;
   color: #fff;
   font-family: "Crimson Text", serif;
   
   
 }
+.btn.btn-secondary{
+  max-height:30px;
+  font-size:10px;
+  text-align: justify;
+}
+
 #thankyou {
-  display: none;
+  display: block;
 }
 
 /* order page */
@@ -341,6 +350,8 @@ body {
 #menu9,
 #menu10 {
   display: none;
+  max-width: 80px;
+  
 }
 #sel1 {
   display: block;
