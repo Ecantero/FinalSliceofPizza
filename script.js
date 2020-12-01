@@ -33,6 +33,12 @@ var specialDeal = document.getElementById("specialDeal");
 
 var price = 0.0;
 
+function thankYou(){
+  var thankyou = document.getElementById("thankyou");
+  thankyou.style.display = "block";
+}
+
+
 const pepp = document.querySelector("input[name=topping1]");
 pepp.addEventListener("change", function () {
   if (this.checked) {
@@ -585,11 +591,6 @@ function hawaiian() {
   }
 }
 
-function thankYou() {
-  var thankyou = document.getElementById("thankyou");
-  console.log("works");
-  thankyou.style.display = "block";
-}
 
 
 // get reference to element containing toppings checkboxes

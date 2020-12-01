@@ -8,7 +8,7 @@ body {
 .navbar-brand {
   color: #cdad77ff;
   font-family: "Italianno", cursive;
-  font-size: 25px;
+  font-size: 35px;
 }
 .navbar-brand:hover {
   color: #fff;
@@ -33,19 +33,21 @@ body {
   /* background-color: #4a7c59ff ; */
 }
 #buttonContainer {
+  
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .btn {
+  margin: 10px;
   background-color: #435433ff;
   color: #fff;
   font-family: "Crimson Text", serif;
-  margin: auto;
+  
   
 }
-.alert {
+#thankyou {
   display: none;
 }
 

@@ -25,30 +25,32 @@
         <a class="navbar-brand" href="homepage.html"> The Hearty Slice</a>
       </div>
 
+    
       <li class="nav-item">
-        <a class="nav-link" href="#">Order Online</a>
+        <button type="button" class="btn" data-toggle="modal" data-target="#pizza">
+          Menu
+        </button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
+        <button type="button" class="btn" data-toggle="modal" data-target="#pizza">
+        Special
+        </button>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Specials</a>
+        <button type="button" class="btn" data-toggle="modal" data-target="#pizza">
+          Order Now
+        </button>
       </li>
     </ul>
   </nav>
 
-  <div class="alert alert-success alert-dismissible fade show" id="thankyou">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <strong>Thank you!</strong> Your order has just reached our kitchen.
-  </div>
+ 
 
   <div class="container">
     <div class="row">
       <div class="col-sm-4"></div>
       <div class="col-sm-4" id="buttonContainer">
-        <button type="button" class="btn" data-toggle="modal" data-target="#pizza">
-          Order Now
-        </button>
+        
 
         <div id="pizza" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -375,9 +377,11 @@
                 <!-- <div id='price'> topping-price</div> -->
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton" onclick="thankYou()">
                   Order Now
                 </button>
+
               </div>
             </div>
           </div>
