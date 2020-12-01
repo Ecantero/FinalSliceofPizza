@@ -125,11 +125,8 @@
                                 <button type="button" class="btn btn-secondary" onclick="showPepp()">Whole</button>
                                 <button type="button" class="btn btn-secondary" onclick="showPeppRight()">Right</button>
                               </div>
-
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="pepperoni" class="custom-control-input" id="pepperoni" />
+                              <label class="custom-control-label" for="pepperoni">Double Pepperoni</label>
                             </div>
                           </div>
 
@@ -149,10 +146,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="sausage" class="custom-control-input" id="sausage" />
+                              <label class="custom-control-label" for="sausage">Double Sausage</label>
                             </div>
                           </div>
 
@@ -172,10 +167,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="ham" class="custom-control-input" id="ham" />
+                              <label class="custom-control-label" for="ham">Double Ham</label>
                             </div>
                           </div>
 
@@ -195,10 +188,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="bacon" class="custom-control-input" id="bacon" />
+                              <label class="custom-control-label" for="bacon">Double Bacon</label>
                             </div>
                           </div>
 
@@ -218,10 +209,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="shrimp" class="custom-control-input" id="shrimp" />
+                              <label class="custom-control-label" for="shrimp">Double Shrimp</label>
                             </div>
                           </div>
                         </div>
@@ -243,10 +232,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="pineapple" class="custom-control-input" id="pineapple" />
+                              <label class="custom-control-label" for="pineapple">Double Pineapples</label>
                             </div>
                           </div>
 
@@ -266,10 +253,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="pepper" class="custom-control-input" id="pepper" />
+                              <label class="custom-control-label" for="pepper">Double Bell Peppers</label>
                             </div>
                           </div>
 
@@ -289,10 +274,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="mushroom" class="custom-control-input" id="mushroom" />
+                              <label class="custom-control-label" for="mushroom">Double Mushroooms</label>
                             </div>
                           </div>
                           <div class="custom-control custom-checkbox">
@@ -311,10 +294,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="olive" class="custom-control-input" id="olive" />
+                              <label class="custom-control-label" for="olive">Double Olives</label>
                             </div>
                           </div>
                           <div class="custom-control custom-checkbox">
@@ -333,10 +314,8 @@
                                   Right
                                 </button>
                               </div>
-                              <select class="form-control form-control-sm">
-                                <option>Extra</option>
-                                <option>Double</option>
-                              </select>
+                              <input type="checkbox" name="cheeto" class="custom-control-input" id="cheeto" />
+                              <label class="custom-control-label" for="cheeto">Double Hot Cheetos</label>
                             </div>
                           </div>
                         </div>
@@ -358,7 +337,8 @@
                       </div>
                       <div class="col-md">
                         <div class="sectionHead">Price/Toppings</div>
-                        <p id="deal">Special Deal 5 toppings is $3, after that $1 each toppings</p>
+                        <p id="deal">Special Deal: 5 toppings is $3, after that $1 each toppings</p>
+                        <div id="tpList"></div>
                         <label
                           >Total: 
                           <div name="total" id="priceText"></div>
@@ -369,7 +349,7 @@
                       <div class="sectionHead">Pricing</div>
 
                       <label id="totalText">Total:
-                        <div name="total" id="priceText"></div>
+                        <div name="total" id="priceTotal"></div>
                       </label>
                     </div>
 
@@ -384,12 +364,12 @@
                 </div>
 
                 <!-- <div id='price'> topping-price</div> -->
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton"
-                  onclick="thankYou()">
-                  Order Now
-                </button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" id="orderButton"
+                    onclick="thankYou()">
+                    Order Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>

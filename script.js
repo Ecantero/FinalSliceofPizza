@@ -33,21 +33,39 @@ var specialDeal = document.getElementById("specialDeal");
 
 var price = 0.0;
 
+var arryTopping = [];
+
 const pepp = document.querySelector("input[name=topping1]");
 pepp.addEventListener("change", function () {
   if (this.checked) {
     topping1.checked = true;
     price += 1;
+    arryTopping.push("pepperoni");
     showPepp();
     showMenu();
+    console.log(arryTopping);
     console.log("pepp topping is checked");
   } else {
     topping1.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
     dontShowPepp();
     showMenu();
     console.log("pepp is not clicked");
   }
+});
+const doublePepp = document.querySelector("input[name=pepperoni]");
+doublePepp.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double pepperoni");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double pepperoni");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const pepp_left = document.getElementById("peppLeft");
 const pepp_right = document.getElementById("peppRight");
@@ -73,16 +91,31 @@ sausage.addEventListener("change", function () {
   if (this.checked) {
     topping2.checked = true;
     price += 1;
+    arryTopping.push("sausage");
     showSausage();
     showMenu();
     console.log("sausage topping is checked");
   } else {
     topping2.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
     dontShowSausage();
     showMenu();
     console.log("sausage is not clicked");
   }
+});
+const doubleSausage = document.querySelector("input[name=sausage]");
+doubleSausage.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double sausage");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double sausage");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const sausage_left = document.getElementById("sausageLeft");
 const sausage_right = document.getElementById("sausageRight");
@@ -108,16 +141,31 @@ ham.addEventListener("change", function () {
   if (this.checked) {
     topping3.checked = true;
     price += 1;
+    arryTopping.push("ham");
     showHam();
     showMenu();
     console.log("ham topping is checked");
   } else {
     topping3.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "ham");
     dontShowHam();
     showMenu();
     console.log("ham is not clicked");
   }
+});
+const doubleHam = document.querySelector("input[name=ham]");
+doubleHam.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double ham");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double ham");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const ham_left = document.getElementById("hamLeft");
 const ham_right = document.getElementById("hamRight");
@@ -143,16 +191,31 @@ bacon.addEventListener("change", function () {
   if (this.checked) {
     topping4.checked = true;
     price += 1;
+    arryTopping.push("bacon");
     showBacon();
     showMenu();
     console.log("bacon topping is checked");
   } else {
     topping4.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "bacon");
     dontShowBacon();
     showMenu();
     console.log("bacon is not clicked");
   }
+});
+const doubleBacon = document.querySelector("input[name=bacon]");
+doubleBacon.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double bacon");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double bacon");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const bacon_left = document.getElementById("baconLeft");
 const bacon_right = document.getElementById("baconRight");
@@ -178,16 +241,31 @@ shrimp.addEventListener("change", function () {
   if (this.checked) {
     topping5.checked = true;
     price += 1;
+    arryTopping.push("shrimp");
     showShrimp();
     showMenu();
     console.log("shrimp topping is checked");
   } else {
     topping5.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "shrimp");
     dontShowShrimp();
     showMenu();
     console.log("shrimp is not clicked");
   }
+});
+const doubleShrimp = document.querySelector("input[name=shrimp]");
+doubleShrimp.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double shrimp");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double shrimp");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const shrimp_left = document.getElementById("shrimpLeft");
 const shrimp_right = document.getElementById("shrimpRight");
@@ -213,16 +291,31 @@ pineapple.addEventListener("change", function () {
   if (this.checked) {
     topping6.checked = true;
     price += 1;
+    arryTopping.push("pineapples");
     showPineapple();
     showMenu();
     console.log("pineapple topping is checked");
   } else {
     topping6.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "pineapples");
     dontShowPineapple();
     showMenu();
     console.log("pineapple is not clicked");
   }
+});
+const doublePineapple = document.querySelector("input[name=pineapple]");
+doublePineapple.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double pineapples");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double pineapples");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const pineapple_left = document.getElementById("pineappleLeft");
 const pineapple_right = document.getElementById("pineappleRight");
@@ -248,16 +341,31 @@ peppers.addEventListener("change", function () {
   if (this.checked) {
     topping7.checked = true;
     price += 1;
+    arryTopping.push("bell peppers");
     showPeppers();
     showMenu();
     console.log("peppers topping is checked");
   } else {
     topping7.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "bell peppers");
     dontShowPeppers();
     showMenu();
     console.log("peppers is not clicked");
   }
+});
+const doublePepper = document.querySelector("input[name=pepper]");
+doublePepper.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double bell peppers");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double bell peppers");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const peppers_left = document.getElementById("bellLeft");
 const peppers_right = document.getElementById("bellRight");
@@ -283,16 +391,31 @@ mushrooms.addEventListener("change", function () {
   if (this.checked) {
     topping8.checked = true;
     price += 1;
+    arryTopping.push("mushrooms");
     showMushroom();
     showMenu();
     console.log("mushrooms topping is checked");
   } else {
     topping8.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "mushrooms");
     dontShowMushroom();
     showMenu();
     console.log("mushrooms is not clicked");
   }
+});
+const doubleMushroom = document.querySelector("input[name=mushroom]");
+doubleMushroom.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double mushrooms");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double mushrooms");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const mushroom_left = document.getElementById("mushroomLeft");
 const mushroom_right = document.getElementById("mushroomRight");
@@ -318,16 +441,31 @@ olives.addEventListener("change", function () {
   if (this.checked) {
     topping9.checked = true;
     price += 1;
+    arryTopping.push("olives");
     showOlive();
     showMenu();
     console.log("olives topping is checked");
   } else {
     topping9.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "olives");
     dontShowOlive();
     showMenu();
     console.log("olives is not clicked");
   }
+});
+const doubleOlive = document.querySelector("input[name=olive]");
+doubleOlive.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double olives");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double olives");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const olive_left = document.getElementById("oliveLeft");
 const olive_right = document.getElementById("oliveRight");
@@ -353,16 +491,31 @@ hotCheeto.addEventListener("change", function () {
   if (this.checked) {
     topping10.checked = true;
     price += 1;
+    arryTopping.push("hot cheetos");
     showCheeto();
     showMenu();
     console.log("hot cheeto topping is checked");
   } else {
     topping10.checked = false;
     price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "hot cheetos");
     dontShowCheeto();
     showMenu();
     console.log("hot cheeto is not clicked");
   }
+});
+const doubleCheeto = document.querySelector("input[name=cheeto]");
+doubleCheeto.addEventListener("change", function () {
+  if (this.checked) {
+    price += 1;
+    arryTopping.push("double hot cheetos");
+    console.log("It is checked");
+  } else {
+    price -= 1;
+    arryTopping = arryTopping.filter((e) => e !== "double hot cheetos");
+    console.log("It is not checked");
+  }
+  showChecked();
 });
 const cheeto_left = document.getElementById("cheetoLeft");
 const cheeto_right = document.getElementById("cheetoRight");
@@ -478,10 +631,23 @@ function meatLovers() {
     topping3.checked = true;
     topping4.checked = true;
     price += 4;
+
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping.push("pepperoni");
     showPepp();
+
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping.push("sausage");
     showSausage();
+
+    arryTopping = arryTopping.filter((e) => e !== "ham");
+    arryTopping.push("ham");
     showHam();
+
+    arryTopping = arryTopping.filter((e) => e !== "bacon");
+    arryTopping.push("bacon");
     showBacon();
+
     showMenu();
   } else {
     topping1.checked = false;
@@ -489,6 +655,10 @@ function meatLovers() {
     topping3.checked = false;
     topping4.checked = false;
     price -= 4;
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping = arryTopping.filter((e) => e !== "ham");
+    arryTopping = arryTopping.filter((e) => e !== "bacon");
     dontShowPepp();
     dontShowSausage();
     dontShowHam();
@@ -503,15 +673,29 @@ function baileysOriginal() {
     topping2.checked = true;
     topping7.checked = true;
     price += 3;
+
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping.push("pepperoni");
     showPepp();
+
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping.push("sausage");
     showSausage();
+
+    arryTopping = arryTopping.filter((e) => e !== "bell peppers");
+    arryTopping.push("bell peppers");
     showPeppers();
+
     showMenu();
   } else {
     topping1.checked = false;
     topping2.checked = false;
     topping7.checked = false;
     price -= 3;
+
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping = arryTopping.filter((e) => e !== "bell peppers");
     dontShowPepp();
     dontShowSausage();
     dontShowPeppers();
@@ -526,10 +710,23 @@ function fireCracker() {
     topping9.checked = true;
     topping10.checked = true;
     price += 4;
+
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping.push("pepperoni");
     showPepp();
+
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping.push("sausage");
     showSausage();
+
+    arryTopping = arryTopping.filter((e) => e !== "olives");
+    arryTopping.push("olives");
     showOlive();
+
+    arryTopping = arryTopping.filter((e) => e !== "hot cheetos");
+    arryTopping.push("hot cheetos");
     showCheeto();
+
     showMenu();
   } else {
     topping1.checked = false;
@@ -537,6 +734,11 @@ function fireCracker() {
     topping9.checked = false;
     topping10.checked = false;
     price -= 4;
+
+    arryTopping = arryTopping.filter((e) => e !== "pepperoni");
+    arryTopping = arryTopping.filter((e) => e !== "sausage");
+    arryTopping = arryTopping.filter((e) => e !== "olives");
+    arryTopping = arryTopping.filter((e) => e !== "hot cheetos");
     dontShowPepp();
     dontShowSausage();
     dontShowOlive();
@@ -551,15 +753,30 @@ function veggieDelight() {
     topping8.checked = true;
     topping9.checked = true;
     price += 3;
+
+    arryTopping = arryTopping.filter((e) => e !== "bell peppers");
+    arryTopping.push("bell peppers");
     showPeppers();
+
+    arryTopping = arryTopping.filter((e) => e !== "mushrooms");
+    arryTopping.push("mushrooms");
     showMushroom();
+
+    arryTopping = arryTopping.filter((e) => e !== "olives");
+    arryTopping.push("olives");
     showOlive();
+
     showMenu();
   } else {
     topping7.checked = false;
     topping8.checked = false;
     topping9.checked = false;
     price -= 3;
+
+    arryTopping = arryTopping.filter((e) => e !== "bell peppers");
+    arryTopping = arryTopping.filter((e) => e !== "mushrooms");
+    arryTopping = arryTopping.filter((e) => e !== "olives");
+
     dontShowPeppers();
     dontShowMushroom();
     dontShowOlive();
@@ -572,22 +789,48 @@ function hawaiian() {
     topping3.checked = true;
     topping6.checked = true;
     price += 2;
+
+    arryTopping = arryTopping.filter((e) => e !== "ham");
+    arryTopping.push("ham");
     showHam();
+
+    arryTopping = arryTopping.filter((e) => e !== "pineapples");
+    arryTopping.push("pineapples");
     showPineapple();
+
     showMenu();
   } else {
     topping3.checked = false;
     topping6.checked = false;
     price -= 2;
+
+    arryTopping = arryTopping.filter((e) => e !== "ham");
+    arryTopping = arryTopping.filter((e) => e !== "pineapples");
+
     dontShowHam();
     dontShowPineapple();
     showMenu();
   }
 }
 
+var thankyou = document.getElementById("thankyou");
 function thankYou() {
-  var thankyou = document.getElementById("thankyou");
   console.log("works");
+  customPizza1.checked = false;
+  customPizza2.checked = false;
+  customPizza3.checked = false;
+  customPizza4.checked = false;
+  customPizza5.checked = false;
+  topping1.checked = false;
+  topping2.checked = false;
+  topping3.checked = false;
+  topping4.checked = false;
+  topping5.checked = false;
+  topping6.checked = false;
+  topping7.checked = false;
+  topping8.checked = false;
+  topping9.checked = false;
+  topping10.checked = false;
   thankyou.style.display = "block";
 }
 
@@ -595,7 +838,8 @@ function thankYou() {
 const deal = document.getElementById("deal");
 
 var currentPrice = 0;
-var text = document.getElementById("priceText");
+var priceTopping = document.getElementById("priceText");
+var priceTotal = document.getElementById("priceTotal");
 function showChecked() {
   if (price > 0 || price < 5) {
     currentPrice = price - 1;
@@ -635,15 +879,26 @@ function changeFunc() {
   showChecked();
 }
 
+const tpList = document.getElementById("tpList");
 function totalPrice() {
   console.log(`topping ${currentPrice}`);
+  priceTopping.innerText = `$ ${currentPrice}`;
   console.log(`size ${sizePrice}`);
-  if (sizePrice == "undefined") {
+  if (sizePrice === undefined) {
     sizePrice = 0;
   }
   let total = sizePrice + currentPrice;
-  console.log(`total ${total}`)
-  text.innerText = `$ ${total}`;
+  console.log(`total ${total}`);
+  while (tpList.firstChild) {
+    tpList.removeChild(tpList.firstChild);
+  }
+  arryTopping.forEach(toppingsList);
+  priceTotal.innerText = `$ ${total}`;
+}
+
+function toppingsList(item) {
+  console.log(item);
+  tpList.innerHTML += item + ", ";
 }
 
 function toppingsSelected() {

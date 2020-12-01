@@ -32,6 +32,11 @@ body {
 
   /* background-color: #4a7c59ff ; */
 }
+
+#thankyou{
+  display: none;
+}
+
 #buttonContainer {
   height: 500px;
   display: flex;
